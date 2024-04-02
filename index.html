@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censo Galactico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Censo Galatico</h1>
+    <div>
+        <input type="text" placeholder="Pesquisar planeta" id="search-input">
+        <button id="search-planet" onclick="searchPlanets()" >Pesquisar</button>
+    </div>
+
+
+    <h3>Lista de Planetas</h3>
+    <div id="planet-list"></div>
+
+    <div id="planet-info-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div id="planet-info"></div>
+            <hr>
+            <table id="planet-residents"></table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
